@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>VYRON | The Ultimate Driving Machine</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- =======================================================
+     LOADER
+======================================================= -->
+
+<div id="loader">
+    <div class="loader-logo">VYRON</div>
+</div>
+
+
+<!-- =======================================================
+     NAVBAR
+======================================================= -->
+
+<header id="header">
+
+    <div class="container navbar">
+
+        <a href="#" class="logo">
+            <div class="logo-mark"></div>
+            VYRON
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#models">Models</a></li>
+            <li><a href="#performance">Performance</a></li>
+            <li><a href="#technology">Technology</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+        </ul>
+
+        <div class="nav-actions">
+            <a href="#models" class="nav-btn">Explore Models</a>
+        </div>
+
+        <button class="menu" id="menuToggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
+
+        <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#models">Models</a></li>
+                <li><a href="#performance">Performance</a></li>
+                <li><a href="#technology">Technology</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+            </ul>
+        </nav>
+
+
+    </div>
+
+</header>
+
+
+<!-- =======================================================
+     HERO
+======================================================= -->
+
+<section class="hero" id="home">
+
+    <video autoplay loop muted playsinline class="hero-video">
+        <source src="src/hero-section.mp4" type="video/mp4">
+    </video>
+
+    <div class="hero-content">
+
+        <div class="hero-small">
+            THE ULTIMATE DRIVING MACHINE
+        </div>
+
+        <h1>
+            DRIVE
+            <span>THE FUTURE.</span>
+        </h1>
+
+        <p class="hero-description" style="text-align: justify;">
+            Experience precision engineering, intelligent technology
+            and unmistakable design created for those who refuse
+            to compromise.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#models" class="btn btn-primary">
+                EXPLORE MODELS
+            </a>
+
+            <a href="#experience" class="btn btn-outline">
+                EXPERIENCE VYRON
+            </a>
+        </div>
+
+    </div>
+
+
+    <div class="hero-bottom">
+
+        <div class="container hero-info">
+
+            <div class="scroll">
+                SCROLL TO DISCOVER
+                <div class="scroll-line"></div>
+            </div>
+
+            <div class="hero-specs">
+
+                <div class="hero-spec">
+                    <strong>3.9s</strong>
+                    <span>0–100 KM/H</span>
+                </div>
+
+                <div class="hero-spec">
+                    <strong>625 HP</strong>
+                    <span>MAX POWER</span>
+                </div>
+
+                <div class="hero-spec">
+                    <strong>250</strong>
+                    <span>KM/H</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     INTRO
+======================================================= -->
+
+<section class="section intro">
+
+    <div class="container intro-grid reveal">
+
+        <div class="intro-image">
+
+            <img
+                src="src/vyron_brand.png"
+                alt="VYRON"
+            >
+
+        </div>
+
+        <div class="intro-text">
+
+            <span>ENGINEERED FOR EMOTION</span>
+
+            <h2>
+                Where
+                performance
+                meets design.
+            </h2>
+
+            <p style="text-align: justify;">
+                Every VYRON is built around one idea - creating an
+                unforgettable connection between driver and machine.
+                From intelligent systems to precision handling,
+                every detail has a purpose.
+            </p>
+
+            <a href="#technology" class="btn btn-outline">
+                DISCOVER MORE
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     MODELS
+======================================================= -->
+
+<section class="section models" id="models">
+
+    <div class="container">
+
+        <div class="section-title reveal">
+
+            <span>THE VYRON RANGE</span>
+
+            <h2>Choose Your VYRON.</h2>
+
+            <p>
+                Explore a collection of performance, luxury and
+                innovation designed around the way you drive.
+            </p>
+
+        </div>
+
+
+        <div class="model-tabs">
+
+            <button class="model-tab active" data-model="m3">
+                M3
+            </button>
+
+            <button class="model-tab" data-model="m4">
+                M4
+            </button>
+
+            <button class="model-tab" data-model="i7">
+                i7
+            </button>
+
+            <button class="model-tab" data-model="x5">
+                X5
+            </button>
+
+        </div>
+
+
+        <div class="model-display reveal">
+
+            <div class="model-image-brand">
+
+                <img id="modelImage"
+                src="src/m3.png"
+                alt="VYRON M3">
+
+            </div>
+
+            <div class="model-info">
+
+                <small id="modelCategory">
+                    M PERFORMANCE
+                </small>
+
+                <h3 id="modelName">
+                    VYRON M3
+                </h3>
+
+                <p id="modelDescription" style="text-align: center;">
+                    A high-performance sports sedan combining
+                    everyday practicality with extraordinary
+                    dynamics and unmistakable M character.
+                </p>
+
+                <div class="model-stats">
+
+                    <div class="stat">
+                        <strong id="power">503 HP</strong>
+                        <span>MAX POWER</span>
+                    </div>
+
+                    <div class="stat">
+                        <strong id="zero">3.8 SEC</strong>
+                        <span>0–100 KM/H</span>
+                    </div>
+
+                    <div class="stat">
+                        <strong id="speed">290 KM/H</strong>
+                        <span>TOP SPEED</span>
+                    </div>
+
+                    <div class="stat">
+                        <strong id="drive">AWD</strong>
+                        <span>DRIVETRAIN</span>
+                    </div>
+
+                </div>
+
+                <a href="#contact" class="btn btn-primary">
+                    DISCOVER THIS MODEL
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= NEW MODEL LAUNCH ================= -->
+<section class="model-launch" id="models">
+
+  <div class="launch-bg"></div>
+
+  <div class="launch-container">
+
+    <div class="launch-heading reveal">
+      <span class="launch-eyebrow">VYRON MOTORWORKS</span>
+
+      <h2>
+        THE NEW
+        <strong>ARCON</strong>
+      </h2>
+
+      <p>
+        Four expressions. One uncompromising machine.
+        Meet the new Vyron ARCON.
+      </p>
+    </div>
+
+    <div class="model-grid">
+
+      <!-- BLUE -->
+      <article class="model-card blue-card">
+        <div class="model-image">
+          <img
+            src="src/vyron-arcon-blue.png"
+            alt="Vyron ARCON Blue Edition"
+          />
+
+          <div class="image-overlay"></div>
+
+          <span class="edition">BLUE EDITION</span>
+
+          <span class="model-number">01</span>
+        </div>
+
+        <div class="model-info">
+
+
+          <div class="model-color">
+            <span></span>
+            BLUE
+          </div>
+        </div>
+
+        <button class="explore-btn" onclick="window.location.href='#contact'">
+          EXPLORE
+          <i>↗</i>
+        </button>
+      </article>
+
+
+      <!-- RED -->
+      <article class="model-card red-card">
+        <div class="model-image">
+          <img
+            src="src/vyron-arcon-red.png"
+            alt="Vyron ARCON Red Edition"
+          />
+
+          <div class="image-overlay"></div>
+
+          <span class="edition">RED EDITION</span>
+
+          <span class="model-number">02</span>
+        </div>
+
+        <div class="model-info">
+
+          <div class="model-color">
+            <span></span>
+            RED
+          </div>
+        </div>
+
+        <button class="explore-btn" onclick="window.location.href='#contact'">
+          EXPLORE
+          <i>↗</i>
+        </button>
+      </article>
+
+
+      <!-- BLACK -->
+      <article class="model-card black-card">
+        <div class="model-image">
+          <img
+            src="src/vyron-arcon-black.png"
+            alt="Vyron ARCON Black Edition"
+          />
+
+          <div class="image-overlay"></div>
+
+          <span class="edition">BLACK EDITION</span>
+
+          <span class="model-number">03</span>
+        </div>
+
+        <div class="model-info">
+
+          <div class="model-color">
+            <span></span>
+            BLACK
+          </div>
+        </div>
+
+        <button class="explore-btn" onclick="window.location.href='#contact'">
+          EXPLORE
+          <i>↗</i>
+        </button>
+      </article>
+
+
+      <!-- YELLOW -->
+      <article class="model-card yellow-card">
+        <div class="model-image">
+          <img
+            src="src/vyron-arcon-yellow.png"
+            alt="Vyron ARCON Yellow Edition"
+          />
+
+          <div class="image-overlay"></div>
+
+          <span class="edition">YELLOW EDITION</span>
+
+          <span class="model-number">04</span>
+        </div>
+
+        <div class="model-info">
+
+          <div class="model-color">
+            <span></span>
+            YELLOW
+          </div>
+        </div>
+
+        <button class="explore-btn" onclick="window.location.href='#contact'">
+          EXPLORE
+          <i>↗</i>
+        </button>
+      </article>
+
+    </div>
+
+    <div class="launch-bottom">
+      <span>01 — 04</span>
+      <div></div>
+      <span>THE NEW GENERATION</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- =======================================================
+     PERFORMANCE
+======================================================= -->
+
+<section class="section performance" id="performance">
+
+    <div class="container">
+
+        <div class="section-title reveal">
+
+            <span>PURE PERFORMANCE</span>
+
+            <h2>Numbers that move you.</h2>
+
+            <p>
+                Precision engineering translated into measurable
+                performance.
+            </p>
+
+        </div>
+
+
+        <div class="performance-grid reveal">
+
+            <div class="performance-card">
+                <strong>625</strong>
+                <span>Horsepower</span>
+                <p>Maximum output</p>
+            </div>
+
+            <div class="performance-card">
+                <strong>3.2</strong>
+                <span>Seconds</span>
+                <p>0–100 km/h</p>
+            </div>
+
+            <div class="performance-card">
+                <strong>750</strong>
+                <span>Nm Torque</span>
+                <p>Instant acceleration</p>
+            </div>
+
+            <div class="performance-card">
+                <strong>250</strong>
+                <span>Km/h</span>
+                <p>Top speed</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     FEATURES
+======================================================= -->
+
+<section class="section">
+
+    <div class="container">
+
+        <div class="section-title reveal">
+
+            <span>INTELLIGENCE MEETS PERFORMANCE</span>
+
+            <h2>Built around you.</h2>
+
+            <p>
+                Technology that disappears into the experience
+                and works naturally around the driver.
+            </p>
+
+        </div>
+
+
+        <div class="features-grid reveal">
+
+            <div class="feature">
+
+                <img
+                    src="src/one.png"
+                    alt=""
+                >
+
+                <div class="feature-content">
+                    <div class="feature-number">01</div>
+                    <h3>Adaptive Intelligence</h3>
+                    <p>
+                        Intelligent systems continuously adapt
+                        to your driving environment.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="feature">
+
+                <img
+                    src="src/two.png"
+                    alt=""
+                >
+
+                <div class="feature-content">
+                    <div class="feature-number">02</div>
+                    <h3>Dynamic Handling</h3>
+                    <p>
+                        Precision chassis technology delivers
+                        confidence through every corner.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="feature">
+
+                <img
+                    src="src/three.png"
+                    alt=""
+                >
+
+                <div class="feature-content">
+                    <div class="feature-number">03</div>
+                    <h3>Digital Cockpit</h3>
+                    <p>
+                        A connected digital environment designed
+                        around the driver's needs.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     GALLERY
+======================================================= -->
+
+<section class="section gallery" id="gallery">
+
+    <div class="container">
+
+        <div class="section-title reveal">
+
+            <span>THE VYRON EXPERIENCE</span>
+
+            <h2>Designed to be seen.</h2>
+
+        </div>
+
+
+        <div class="gallery-grid reveal">
+
+            <div class="gallery-item">
+
+                <img
+                    src="src/iconic.png"
+                    alt=""
+                >
+
+                <div class="gallery-label">
+                    ICONIC DESIGN
+                </div>
+
+            </div>
+
+
+            <div class="gallery-item">
+
+                <img
+                    src="src/performance.png"
+                    alt=""
+                >
+
+                <div class="gallery-label">
+                    PERFORMANCE
+                </div>
+
+            </div>
+
+
+            <div class="gallery-item">
+
+                <img
+                    src="src/elegance.png"
+                    alt=""
+                >
+
+                <div class="gallery-label">
+                    ELEGANCE
+                </div>
+
+            </div>
+
+
+            <div class="gallery-item">
+
+                <img
+                    src="src/technology.png"
+                    alt=""
+                >
+
+                <div class="gallery-label">
+                    TECHNOLOGY
+                </div>
+
+            </div>
+
+
+            <div class="gallery-item">
+
+                <img
+                    src="src/m_power.png"
+                    alt=""
+                >
+
+                <div class="gallery-label">
+                    M POWER
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     TECHNOLOGY
+======================================================= -->
+
+<section class="section tech" id="technology">
+
+    <div class="container tech-grid reveal">
+
+        <div class="tech-image">
+
+            <video src="src/360.mp4" autoplay muted loop style="width: 600px;"></video>
+
+        </div>
+
+
+        <div class="tech-text">
+
+            <span>VYRON TECHNOLOGY</span>
+
+            <h2>
+                Technology
+                that thinks
+                ahead.
+            </h2>
+
+            <p style="text-align: justify;">
+                From intelligent driver assistance to immersive
+                digital experiences, every system is designed to
+                make your journey safer, smarter and more connected.
+            </p>
+
+
+            <div class="tech-list">
+
+                <div class="tech-item">
+
+                    <div class="tech-icon">✦</div>
+
+                    <div>
+                        <h4>VYRON Intelligent Personal Assistant</h4>
+                        <p>
+                            Natural interaction with your vehicle.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="tech-item">
+
+                    <div class="tech-icon">✦</div>
+
+                    <div>
+                        <h4>Advanced Driver Assistance</h4>
+                        <p>
+                            Intelligent support when you need it.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="tech-item">
+
+                    <div class="tech-icon">✦</div>
+
+                    <div>
+                        <h4>Connected Navigation</h4>
+                        <p>
+                            Stay informed throughout every journey.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     CTA
+======================================================= -->
+
+<section class="cta" id="contact">
+
+    <div class="cta-content reveal">
+
+        <h2>
+            READY TO
+            <br>
+            DRIVE?
+        </h2>
+
+        <p>
+            Your next journey starts here. Discover the VYRON
+            designed around you.
+        </p>
+
+        <a href="#models" class="btn btn-primary">
+            EXPLORE THE RANGE
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     FOOTER
+======================================================= -->
+
+<footer>
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div class="footer-brand">
+
+                <div class="logo">
+                    <div class="logo-mark"></div>
+                    VYRON
+                </div>
+
+                <p style="text-align: justify;">
+                    The Ultimate Driving Machine. Discover
+                    performance, design and technology engineered
+                    for the road ahead.
+                </p>
+
+            </div>
+
+
+            <div class="footer-col">
+
+                <h4>Models</h4>
+
+                <a href="#models">VYRON M3</a>
+                <a href="#models">VYRON M4</a>
+                <a href="#models">VYRON i7</a>
+                <a href="#models">VYRON X5</a>
+
+            </div>
+
+
+            <div class="footer-col">
+
+                <h4>Discover</h4>
+
+                <a href="#performance">Performance</a>
+                <a href="#technology">Technology</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#experience">Experience</a>
+
+            </div>
+
+
+            <div class="footer-col">
+
+                <h4>Connect</h4>
+
+                <a href="#">Instagram</a>
+                <a href="#">YouTube</a>
+                <a href="#">Facebook</a>
+                <a href="#">LinkedIn</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+
+            <span>
+                © 2026 VYRON. All rights preserved.
+            </span>
+
+            <span>
+                Designed for digital experience.
+            </span>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
